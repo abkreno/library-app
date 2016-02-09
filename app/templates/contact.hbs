@@ -1,0 +1,30 @@
+<h1>Contact Page</h1>
+
+<div class="jumbotron text-center">
+
+  <div class="form-horizontal form-group form-group-lg {{status}} row">
+
+        {{!Message Area}}
+        <div class="input-group">
+            {{textarea class="form-control" placeholder="Your message. (At least 5 characters.)" rows="8" value=message}}
+        </div>
+
+        {{!Email Field}}
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+            <span class="glyphicon {{glyphicon}} form-control-feedback" aria-hidden="true"></span>
+        </div>
+
+        {{!Send Button}}
+        <div class="input-group">
+            <button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'sendMessage'}}>Send</button>
+        </div>
+
+  </div>
+
+    {{#if responseMessage}}
+       <div class="alert alert-success">{{responseMessage}}</div>
+    {{/if}}
+
+</div>

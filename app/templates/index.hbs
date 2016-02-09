@@ -1,1 +1,26 @@
 <h1>Home Page</h1>
+
+<div class="jumbotron text-center">
+       <h1>Coming Soon</h1>
+
+       <br/><br/>
+
+       <p>Don't miss our launch date, request an invitation now.</p>
+
+       <div class="form-horizontal form-group form-group-lg row">
+           <div class="input-group">
+             <span class="input-group-addon">@</span>
+             {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+           </div>
+           <div class="input-group">
+               <button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'saveInvitation'}}>Request invitation</button>
+           </div>
+
+       </div>
+
+       {{#if responseMessage}}
+          <div class="alert alert-success">{{responseMessage}}</div>
+       {{/if}}
+
+       <br/><br/>
+</div>

@@ -3,3 +3,13 @@
 body{
   padding-top: 10px;
 }
+
+.input-group{
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+  .btn{
+    margin: auto;
+    width: 40%;
+  }
+}
