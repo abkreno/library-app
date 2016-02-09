@@ -23,6 +23,7 @@ export default Ember.Controller.extend({
     sendMessage() {
       this.set('responseMessage', `Thank you! your message has been sent`);
       this.set('emailAddress', '');
+      this.set('message', '');
     }
   }
 });
