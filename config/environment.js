@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-blog',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://resplendent-fire-581.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -26,7 +28,7 @@ module.exports = function(environment) {
       ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
       ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
-  
+
   if (environment === 'test') {
     // Testem prefers this...
     ENV.baseURL = '/';
