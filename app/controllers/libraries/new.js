@@ -8,19 +8,5 @@ export default Ember.Controller.extend({
       return true;
     }
     return this.get('model').get('name').length < 4||this.get('model').get('phone').length < 4||this.get('model').get('address').length < 4;
-  }),
-  actions: {
-
-    saveLibrary(newLibrary) {
-      newLibrary.save().then(() => this.transitionTo('libraries'));
-    },
-
-    willTransition() {
-      let model = this.controller.get('model');
-
-      if (model.get('isNew')) {
-        model.destroyRecord();
-      }
-    }
-  }
+  })
 });
