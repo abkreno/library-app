@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-blog',
+    modulePrefix: 'library-app',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: 'https://resplendent-fire-581.firebaseio.com/',
@@ -22,11 +22,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-      // ENV.APP.LOG_RESOLVER = true;
-      ENV.APP.LOG_ACTIVE_GENERATION = true;
-      ENV.APP.LOG_TRANSITIONS = true;
-      ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-      ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_RESOLVER = true;
+     ENV.APP.LOG_ACTIVE_GENERATION = true;
+     ENV.APP.LOG_TRANSITIONS = true;
+     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+     ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
