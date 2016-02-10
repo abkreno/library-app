@@ -1,7 +1,7 @@
 {
-  "name": "ember-blog",
+  "name": "library-app",
   "version": "0.0.0",
-  "description": "Small description for ember-blog goes here",
+  "description": "Small description for library-app goes here",
   "private": true,
   "directories": {
     "doc": "doc",
